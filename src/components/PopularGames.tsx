@@ -1,0 +1,91 @@
+import { useState } from "react";
+
+const games = [
+  { name: "GATES OF OLYMPUS", image: "/images/gates-of-olympus.jpg", badge: "HOT" },
+  { name: "GANESHA FORTUNE", image: "/images/ganesha-fortune.jpg" },
+  { name: "RISE OF RA", image: "/images/rise-of-ra.jpg", badge: "NEW" },
+  { name: "DRAGON HATCH", image: "/images/dragon-hatch.jpg" },
+  { name: "WOLF GOLD", image: "/images/wolf-gold.jpg", badge: "LIVE" },
+];
+
+const tabs = ["HOT", "NEW", "LIVE"];
+
+const PopularGames = () => {
+  const [activeTab, setActiveTab] = useState("HOT");
+
+  return (
+    <section className="px-4 py-6 bg-[#0f0620]">
+      <div className="flex items-center justify-between mb-4">
+        <h3 className="text-sm font-semibold text-gray-300">Popular Games</h3>
+        <span className="text-xs text-yellow-400 cursor-pointer hover:underline">VIEW ALL &gt;</span>
+      </div>
+
+      {/* Tabs */}
+      <div className="flex gap-4 mb-4">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`text-xs font-semibold px-3 py-1 rounded-full transition-colors ${
+              activeTab === tab
+                ? "bg-yellow-500/20 text-yellow-400"
+                : "text-gray-500 hover:text-gray-300"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {/* Games Grid */}
+      <div className="grid grid-cols-5 gap-2">
+        {games.map((game) => (
+          <div key={game.name} className="relative group cursor-pointer">
+            <div className="relative overflow-hidden rounded-lg">
+              <img
+                src={game.image}
+                alt={game.name}
+                className="w-full aspect-square object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+              {game.badge && (
+                <span className={`absolute top-1 right-1 text-[8px] font-bold px-1.5 py-0.5 rounded-full ${
+                  game.badge === "HOT" ? "bg-red-500" :
+                  game.badge === "NEW" ? "bg-green-500" :
+                  "bg-red-600"
+                } text-white`}>
+                  {game.badge}
+                </span>
+              )}
+            </div>
+            <p className="text-[8px] text-gray-400 text-center mt-1 uppercase tracking-wider leading-tight">
+              {game.name}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom casino images row */}
+      <div className="grid grid-cols-5 gap-2 mt-3">
+        {[
+          "/images/roulette.jpg",
+          "/images/casino-red.jpg",
+          "/images/casino-floor.jpg",
+          "/images/poker-chips.jpg",
+          "/images/board-game.jpg",
+        ].map((img, i) => (
+          <div key={i} className="overflow-hidden rounded-lg cursor-pointer">
+            <img
+              src={img}
+              alt="Casino game"
+              className="w-full aspect-square object-cover rounded-lg hover:scale-110 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default PopularGames;
