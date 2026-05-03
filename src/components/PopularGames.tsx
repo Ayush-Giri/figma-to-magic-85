@@ -8,12 +8,9 @@ const games = [
   { name: "WOLF GOLD", image: "/images/wolf-gold.jpg", badge: "LIVE" },
 ];
 
-const tabs = ["HOT", "NEW", "LIVE"];
-
 type RoleType = "PLAYER" | "AGENT";
 
 const PopularGames = () => {
-  const [activeTab, setActiveTab] = useState("HOT");
   const [role, setRole] = useState<RoleType>("PLAYER");
 
   return (
@@ -40,23 +37,6 @@ const PopularGames = () => {
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-semibold text-gray-300">Popular Games</h3>
         <span className="text-xs text-yellow-400 cursor-pointer hover:underline">VIEW ALL &gt;</span>
-      </div>
-
-      {/* Tabs */}
-      <div className="flex gap-4 mb-4">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`text-xs font-semibold px-3 py-1 rounded-full transition-colors ${
-              activeTab === tab
-                ? "bg-yellow-500/20 text-yellow-400"
-                : "text-gray-500 hover:text-gray-300"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
       </div>
 
       {/* Games Grid */}
