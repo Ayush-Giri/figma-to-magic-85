@@ -70,19 +70,24 @@ const PopularGames = () => {
       {/* Bottom casino images row */}
       <div className="grid grid-cols-5 gap-2 mt-3">
         {[
-          "/images/roulette.jpg",
-          "/images/casino-red.jpg",
-          "/images/casino-floor.jpg",
-          "/images/poker-chips.jpg",
-          "/images/board-game.jpg",
-        ].map((img, i) => (
-          <div key={i} className="overflow-hidden rounded-lg cursor-pointer">
-            <img
-              src={img}
-              alt="Casino game"
-              className="w-full aspect-square object-cover rounded-lg hover:scale-110 transition-transform duration-300"
-              loading="lazy"
-            />
+          { name: "ROULETTE", image: "/images/roulette.jpg" },
+          { name: "CASINO RED", image: "/images/casino-red.jpg" },
+          { name: "CASINO FLOOR", image: "/images/casino-floor.jpg" },
+          { name: "POKER CHIPS", image: "/images/poker-chips.jpg" },
+          { name: "BOARD GAME", image: "/images/board-game.jpg" },
+        ].map((game, i) => (
+          <div key={i} className="relative group cursor-pointer">
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={game.image}
+                alt={game.name}
+                className="w-full aspect-square object-cover rounded-lg group-hover:scale-110 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <p className="text-[8px] text-gray-400 text-center mt-1 uppercase tracking-wider leading-tight">
+              {game.name}
+            </p>
           </div>
         ))}
       </div>
