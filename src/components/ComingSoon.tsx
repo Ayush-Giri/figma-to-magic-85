@@ -25,10 +25,10 @@ const ComingSoon = () => {
       </div>
 
       {/* Scrollable game images */}
-      <div className="overflow-x-auto scrollbar-hide">
-        <div className="flex gap-3 px-4 py-2" style={{ width: "max-content" }}>
+      <div className="px-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3 py-2">
           {comingGames.map((img, i) => (
-            <div key={i} className="w-[100px] h-[130px] flex-shrink-0 overflow-hidden rounded-xl">
+            <div key={i} className="aspect-[3/4] overflow-hidden rounded-xl">
               <img
                 src={img}
                 alt="Coming soon game"
