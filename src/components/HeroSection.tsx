@@ -16,7 +16,7 @@ const HeroSection = () => {
             src="/images/lucky-strike-logo.jpg"
             alt="Lucky Strike"
             className="w-[70%] max-w-[300px] h-auto"
-            style={{ imageRendering: "auto", filter: "contrast(1.1) sharpen(1)" }}
+            style={{ imageRendering: "auto", filter: "contrast(1.15) brightness(1.05)" }}
           />
         </div>
       </div>
