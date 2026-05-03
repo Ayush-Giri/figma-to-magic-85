@@ -13,10 +13,9 @@ const HeroSection = () => {
         {/* Lucky Strike Logo overlay at top */}
         <div className="absolute top-4 left-0 right-0 flex justify-center">
           <img
-            src="/images/lucky-strike-logo.jpg"
+            src="/images/lucky-strike-logo.png"
             alt="Lucky Strike"
-            className="w-[70%] max-w-[300px] h-auto"
-            style={{ imageRendering: "auto", filter: "contrast(1.15) brightness(1.05)" }}
+            className="w-[70%] max-w-[300px] h-auto drop-shadow-[0_0_20px_rgba(234,179,8,0.5)]"
           />
         </div>
       </div>
