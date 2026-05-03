@@ -12,7 +12,6 @@ type RoleType = "PLAYER" | "AGENT";
 
 const PopularGames = () => {
   const [role, setRole] = useState<RoleType>("PLAYER");
-  const [role, setRole] = useState<RoleType>("PLAYER");
 
   return (
     <section className="px-4 py-6 bg-[#0f0620]">
