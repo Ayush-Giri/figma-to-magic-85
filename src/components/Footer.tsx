@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="px-4 py-6 bg-[#0a0418] border-t border-purple-900/30">
-      <h5 className="text-sm font-bold text-purple-300 tracking-wider mb-4">NEON CASINO</h5>
+      <h5 className="text-sm font-bold bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent tracking-wider mb-4">LUCKY STRIKE</h5>
       <div className="flex gap-4 mb-4 flex-wrap">
         {["Terms of Service", "Privacy Policy", "Fair Play", "Contact Us"].map((link) => (
           <a
@@ -14,7 +14,7 @@ const Footer = () => {
         ))}
       </div>
       <p className="text-[8px] text-gray-600">
-        © 2024 NEON CASINO. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.
+        © 2024 LUCKY STRIKE. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.
       </p>
     </footer>
   );
