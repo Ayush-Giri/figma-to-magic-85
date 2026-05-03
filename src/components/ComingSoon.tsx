@@ -26,7 +26,7 @@ const ComingSoon = () => {
 
       {/* Scrollable game images */}
       <div className="px-4">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-7 gap-3 py-2">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-7 gap-2 sm:gap-3 py-2">
           {comingGames.map((img, i) => (
             <div key={i} className="aspect-[3/4] overflow-hidden rounded-xl">
               <img

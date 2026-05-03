@@ -9,7 +9,7 @@ const AppDownloadCard = () => {
           {/* Phone mockup */}
           <div className="flex-shrink-0 w-[120px]">
             <img
-              src="/images/phone-mockup.jpg"
+              src="/images/lucky-strike-logo.png"
               alt="Lucky Strike App"
               className="w-full h-auto rounded-lg"
               loading="lazy"

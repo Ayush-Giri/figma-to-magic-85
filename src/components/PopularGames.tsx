@@ -42,23 +42,6 @@ const PopularGames = () => {
         <span className="text-xs text-yellow-400 cursor-pointer hover:underline">VIEW ALL &gt;</span>
       </div>
 
-      {/* Tabs */}
-      <div className="flex gap-4 mb-4">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setActiveTab(tab)}
-            className={`text-xs font-semibold px-3 py-1 rounded-full transition-colors ${
-              activeTab === tab
-                ? "bg-yellow-500/20 text-yellow-400"
-                : "text-gray-500 hover:text-gray-300"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
-
       {/* Games Grid */}
       <div className="grid grid-cols-5 gap-2">
         {games.map((game) => (
