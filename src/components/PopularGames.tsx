@@ -8,12 +8,10 @@ const games = [
   { name: "WOLF GOLD", image: "/images/wolf-gold.jpg", badge: "LIVE" },
 ];
 
-const tabs = ["HOT", "NEW", "LIVE"];
-
 type RoleType = "PLAYER" | "AGENT";
 
 const PopularGames = () => {
-  const [activeTab, setActiveTab] = useState("HOT");
+  const [role, setRole] = useState<RoleType>("PLAYER");
   const [role, setRole] = useState<RoleType>("PLAYER");
 
   return (
