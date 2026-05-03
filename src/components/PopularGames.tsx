@@ -10,11 +10,33 @@ const games = [
 
 const tabs = ["HOT", "NEW", "LIVE"];
 
+type RoleType = "PLAYER" | "AGENT";
+
 const PopularGames = () => {
   const [activeTab, setActiveTab] = useState("HOT");
+  const [role, setRole] = useState<RoleType>("PLAYER");
 
   return (
     <section className="px-4 py-6 bg-[#0f0620]">
+      {/* Player / Agent Toggle */}
+      <div className="flex items-center justify-center mb-4">
+        <div className="flex bg-[#1a0a2e] rounded-full p-1 border border-purple-500/30">
+          {(["PLAYER", "AGENT"] as RoleType[]).map((r) => (
+            <button
+              key={r}
+              onClick={() => setRole(r)}
+              className={`px-6 py-1.5 text-xs font-bold rounded-full transition-all ${
+                role === r
+                  ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-black shadow-lg"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              {r}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-semibold text-gray-300">Popular Games</h3>
         <span className="text-xs text-yellow-400 cursor-pointer hover:underline">VIEW ALL &gt;</span>
