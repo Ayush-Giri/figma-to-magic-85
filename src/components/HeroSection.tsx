@@ -22,10 +22,10 @@ const HeroSection = () => {
 
       {/* Download Now Button */}
       <div className="relative -mt-8 flex justify-center z-10">
-        <a href="https://luckystrike.games:777/luckystrike.html" target="_blank" rel="noopener noreferrer" className="relative inline-block text-center px-12 py-5 bg-gradient-to-b from-[#2a1a4e] to-[#1a0a2e] border-2 border-purple-500/60 rounded-full text-white font-bold text-2xl tracking-wider shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_50px_rgba(168,85,247,0.6)] transition-all no-underline">
+        <a href="https://luckystrike.games:777/luckystrike.html" target="_blank" rel="noopener noreferrer" className="relative inline-flex flex-col items-center justify-center text-center px-12 py-5 bg-gradient-to-b from-[#2a1a4e] to-[#1a0a2e] border-2 border-purple-500/60 rounded-full text-white font-bold text-2xl tracking-wider shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:shadow-[0_0_50px_rgba(168,85,247,0.6)] transition-all no-underline">
           <ChevronLeft className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-300" />
-          <span className="block leading-tight">DOWNLOAD</span>
-          <span className="block leading-tight">NOW</span>
+          <span className="leading-tight">DOWNLOAD</span>
+          <span className="leading-tight">NOW</span>
           <ChevronRight className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-purple-300" />
         </a>
       </div>
