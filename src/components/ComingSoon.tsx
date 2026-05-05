@@ -15,7 +15,7 @@ const ComingSoon = () => {
       <div className="text-center mb-4 px-4">
         <div className="flex items-center justify-center gap-2 mb-2">
           <span className="text-yellow-400 text-xs">✦</span>
-          <h3 className="text-lg font-bold text-white tracking-wider">COMING SOON</h3>
+          <h3 className="text-lg font-bold text-white tracking-wider"><h3 className="text-lg font-bold text-white tracking-wider">HOT GAMES</h3></h3>
           <span className="text-yellow-400 text-xs">✦</span>
         </div>
         <div className="w-32 h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent mx-auto mb-3" />

@@ -14,7 +14,7 @@ const Footer = () => {
         ))}
       </div>
       <p className="text-[8px] text-gray-600">
-        © 2024 LUCKY STRIKE. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.
+        © 2026 LUCKY STRIKE. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.. ALL RIGHTS RESERVED. PLAY RESPONSIBLY.
       </p>
     </footer>
   );

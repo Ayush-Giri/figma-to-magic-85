@@ -36,7 +36,6 @@ const PopularGames = () => {
 
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-semibold text-gray-300">Popular Games</h3>
-        <span className="text-xs text-yellow-400 cursor-pointer hover:underline">VIEW ALL &gt;</span>
       </div>
 
       {/* Games Grid */}
