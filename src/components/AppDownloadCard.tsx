@@ -61,12 +61,12 @@ const AppDownloadCard = () => {
 
       {/* CTA Buttons */}
       <div className="flex gap-3 mt-6 justify-center">
-        <button className="flex items-center gap-2 px-6 py-3 border border-cyan-400/50 rounded-full text-cyan-300 text-sm font-semibold hover:bg-cyan-400/10 transition-colors">
+        <a href="https://play.luckystrike.games/game/luckystrike777_pc/index.html" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-cyan-400/50 rounded-full text-cyan-300 text-sm font-semibold hover:bg-cyan-400/10 transition-colors">
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 20V4M12 4l6 6M12 4L6 10" />
           </svg>
           PLAY NOW
-        </button>
+        </a>
         <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full text-white text-sm font-semibold hover:from-teal-500 hover:to-cyan-500 transition-colors">
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
