@@ -67,12 +67,12 @@ const AppDownloadCard = () => {
           </svg>
           PLAY NOW
         </a>
-        <button className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full text-white text-sm font-semibold hover:from-teal-500 hover:to-cyan-500 transition-colors">
+        <a href="https://luckystrike.games:777/luckystrike.html" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-teal-600 to-cyan-600 rounded-full text-white text-sm font-semibold hover:from-teal-500 hover:to-cyan-500 transition-colors">
           <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
           </svg>
           DOWNLOAD iOS
-        </button>
+        </a>
       </div>
     </section>
   );
