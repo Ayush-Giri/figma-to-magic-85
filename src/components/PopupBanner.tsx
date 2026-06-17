@@ -15,7 +15,7 @@ const PopupBanner = () => {
         {/* X Button */}
         <button
           onClick={() => setIsVisible(false)}
-          className="absolute -top-3 -right-3 z-10 bg-white text-black rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm shadow-lg hover:bg-gray-200 transition-all"
+          className="absolute -top-4 -right-4 z-10 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center font-bold text-lg shadow-lg hover:bg-gray-200 transition-all"
         >
           ✕
         </button>
