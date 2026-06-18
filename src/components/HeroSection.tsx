@@ -49,11 +49,11 @@ const HeroSection = () => {
           className="w-full h-auto object-cover"
         />
         {/* Lucky Strike Logo overlay at top */}
-        <div className="absolute top-4 left-0 right-0 flex justify-center">
+        <div className="absolute top-3 left-0 right-0 flex justify-center px-4">
           <img
             src="/images/lucky_strike_final-preview.png"
             alt="Lucky Strike"
-            className="w-[70%] max-w-[300px] h-auto drop-shadow-[0_0_20px_rgba(234,179,8,0.5)]"
+            className="w-[50%] max-w-[220px] sm:w-[60%] sm:max-w-[280px] h-auto drop-shadow-[0_0_20px_rgba(234,179,8,0.5)]"
           />
         </div>
       </div>

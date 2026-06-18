@@ -246,7 +246,7 @@ const AppDownloadCard = () => {
                 </div>
               </div>
               <span className="relative text-base">♠</span>
-              <span className="relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">PLAY NOW</span>
+              <span className="relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">PLAY ON BROWSER</span>
               <span className="relative text-base">♦</span>
             </a>
           </div>
