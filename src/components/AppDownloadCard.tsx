@@ -188,7 +188,7 @@
 
 // export default AppDownloadCard;
 
-import { Star, Monitor } from "lucide-react";
+import { Star, Monitor, Database, Image as ImageIcon } from "lucide-react";
 
 const AppDownloadCard = () => {
   return (
@@ -222,13 +222,14 @@ const AppDownloadCard = () => {
             </div>
           </div>
 
-          {/* Play Now Button — Centered */}
-          <div className="flex justify-center mt-5 mb-2">
+          {/* Action Buttons: Play & Marketing Materials */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-5 mb-2 px-4 sm:px-0">
+            {/* Play Now Button */}
             <a
               href="https://play.luckystrike.games/game/luckystrike777_pc/index.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center justify-center gap-2 px-10 py-4 rounded-full text-lg font-black uppercase tracking-widest no-underline
+              className="group relative inline-flex items-center justify-center gap-2 px-6 sm:px-10 py-4 rounded-full text-[15px] sm:text-lg font-black uppercase tracking-widest no-underline
                 overflow-hidden
                 animate-glow-pulse
                 bg-gradient-to-b from-[#ffe066] via-[#f5a800] to-[#b8600a]
@@ -237,7 +238,7 @@ const AppDownloadCard = () => {
                 hover:from-[#ffec80] hover:via-[#ffb700] hover:to-[#c97000]
                 hover:scale-[1.05]
                 active:scale-[0.97]
-                transition-all duration-300"
+                transition-all duration-300 w-full sm:w-auto text-center"
             >
               {/* Shimmer sweep */}
               <div className="absolute inset-0">
@@ -245,9 +246,35 @@ const AppDownloadCard = () => {
                   <div className="w-12 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
                 </div>
               </div>
-              <span className="relative text-base">♠</span>
+              <span className="relative text-base hidden sm:inline">♠</span>
               <span className="relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">PLAY ON BROWSER</span>
-              <span className="relative text-base">♦</span>
+              <span className="relative text-base hidden sm:inline">♦</span>
+            </a>
+
+            {/* Marketing Materials Button */}
+            <a
+              href="/marketing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center justify-center gap-2 px-6 sm:px-10 py-4 rounded-full text-[15px] sm:text-lg font-black uppercase tracking-widest no-underline
+                overflow-hidden
+                animate-glow-pulse
+                bg-gradient-to-b from-[#ffe066] via-[#f5a800] to-[#b8600a]
+                text-[#3a1a00]
+                border-[3px] border-[#ffe066]/80
+                hover:from-[#ffec80] hover:via-[#ffb700] hover:to-[#c97000]
+                hover:scale-[1.05]
+                active:scale-[0.97]
+                transition-all duration-300 w-full sm:w-auto text-center"
+            >
+              {/* Shimmer sweep */}
+              <div className="absolute inset-0">
+                <div className="absolute inset-0 animate-gold-shimmer">
+                  <div className="w-12 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+                </div>
+              </div>
+              <ImageIcon className="relative w-5 h-5 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]" />
+              <span className="relative drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">MARKETING</span>
             </a>
           </div>
 
@@ -280,8 +307,8 @@ const AppDownloadCard = () => {
       </section>
 
       {/* Sticky Download Buttons */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 px-4 py-4 pointer-events-none">
-        <div className="flex gap-3 justify-center items-stretch max-w-md mx-auto pointer-events-auto">
+      <div className="fixed bottom-0 left-0 right-0 z-50 px-4 py-4 pointer-events-none flex flex-col gap-3">
+        <div className="flex gap-3 justify-center items-stretch w-full max-w-md mx-auto pointer-events-auto">
           {/* Download Android Button */}
           <a
             href="https://play.luckystrike.games/app/LuckyStrike.apk"
@@ -382,10 +409,59 @@ const AppDownloadCard = () => {
             </div>
           </a>
         </div>
+
+        {/* Backend Button */}
+        <div className="flex justify-center items-stretch w-full pointer-events-auto">
+          <a
+            href="https://luckystrike.games:8781/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full flex items-center justify-center gap-4 px-4 py-3.5 rounded-2xl no-underline
+              overflow-hidden
+              animate-premium-gold-glow
+              bg-gradient-to-b from-[#221638] via-[#1a1030] to-[#110a20]
+              border-2 border-[#d4a017]/50
+              hover:scale-[1.01]
+              active:scale-[0.98]
+              transition-all duration-300"
+          >
+            {/* Gold radial background wash */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,160,23,0.12)_0%,transparent_70%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(212,160,23,0.06)_0%,transparent_60%)]" />
+            {/* Always-on gold shimmer sweep */}
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 animate-gold-shimmer">
+                <div className="w-12 h-full bg-gradient-to-r from-transparent via-[#d4a017]/25 to-transparent" />
+              </div>
+            </div>
+            {/* Top gold edge */}
+            <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#d4a017]/10 via-[#ffd700]/50 to-[#d4a017]/10" />
+            {/* Bottom gold edge */}
+            <div className="absolute bottom-0 left-4 right-4 h-[1px] bg-gradient-to-r from-transparent via-[#d4a017]/30 to-transparent" />
+            {/* Gold corner accents */}
+            <div className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-[#ffd700]/50 rounded-tl-2xl" />
+            <div className="absolute top-0 right-0 w-5 h-5 border-t-2 border-r-2 border-[#ffd700]/50 rounded-tr-2xl" />
+            <div className="absolute bottom-0 left-0 w-5 h-5 border-b-2 border-l-2 border-[#d4a017]/30 rounded-bl-2xl" />
+            <div className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-[#d4a017]/30 rounded-br-2xl" />
+            
+            {/* Database Icon */}
+            <Database className="relative w-6 h-6 text-[#ffd700] drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]" />
+            
+            <span className="relative text-[16px] font-extrabold tracking-[0.1em] uppercase bg-gradient-to-r from-[#ffd700] via-[#fff4c8] to-[#d4a017] bg-clip-text text-transparent">
+              Backend
+            </span>
+            
+            {/* Gold right arrow */}
+            <svg className="relative w-5 h-5 text-[#ffd700] group-hover:translate-x-1 transition-transform duration-300 drop-shadow-[0_0_6px_rgba(255,215,0,0.4)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+
       </div>
 
       {/* Padding so sticky bar doesn't cover footer content */}
-      <div className="h-20" />
+      <div className="h-36" />
     </>
   );
 };
